@@ -1,65 +1,45 @@
-$( document ).ready(function() {
-var scaleCurve = mojs.easing.path('M0,100 L25,99.9999983 C26.2328835,75.0708847 19.7847843,0 100,0');
-   var el = document.querySelector('.button'),
-	// mo.js timeline obj
-	timeline = new mojs.Timeline(),
+// album info
 
-	// tweens for the animation:
-
-	// burst animation
-	tween1 = new mojs.Burst({
-		parent: el,
-  radius:   { 0: 100 },
-  angle:    { 0: 45 },
-  y: -10,
-  count:    10,
-   radius:       100,
-  children: {
-    shape:        'circle',
-    radius:       30,
-    fill:         [ 'red', 'white' ],
-    strokeWidth:  15,
-    duration:     500,
-  }
-	});
+var albumTitle = ["Just Another Diamond Day", "Swaddling Songs", "Gloria Barnes", 
+                    "Pre-Flight", "Corridor of Faces", "Estrelando Embaixador", "Song of A Gypsy",
+                      "Pre-Meditated Gangstarism", "Pleure et Applaudit"]
+var albumArtist = ["Vashti Bunyan", "Mellow Candle", "Gloria Barnes", "Room", "Lazy Smoke",
+                    "Tribo Massahi", "Damon", "Young Gangstas", "Jean Dubuffet"]
+var albumCountry = ["UK", "US", "Brazil", "France"]
+var albumYear = ["1961", "1968", "1970", "1971", "1972", "1995"]
+var albumLabel = ["Philips", "Deram", "Maple Records", "Onyx", "River's", "Ankh", "Teflon Don Records", "Galleria Del Cavallino Venise"]
+var albumGenre = ["Folk", "Soul", "Blues Rock", "Psych Rock", "Samba", "Hip Hop", "Avant-Garde"]
+var albumPrice = ["$1,300", "$1,700", "$2,500", "$2,800", "$3,300", "$3,500", "$3,600", "$5,000"]
 
 
-	tween2 = new mojs.Tween({
-		duration : 900,
-		onUpdate: function(progress) {
-			var scaleProgress = scaleCurve(progress);
-			el.style.WebkitTransform = el.style.transform = 'scale3d(' + scaleProgress + ',' + scaleProgress + ',1)';
-		}
-	});
-  		tween3 = new mojs.Burst({
-		parent: el,
-  radius:   { 0: 100 },
-  angle:    { 0: -45 },
-  y: -10,
-  count:    10,
-   radius:       125,
-  children: {
-    shape:        'circle',
-    radius:       30,
-    fill:         [ 'white', 'red' ],
-    strokeWidth:  15,
-    duration:     400,
-  }
-	});
-
-// add tweens to timeline:
-timeline.add(tween1, tween2, tween3);
 
 
-// when clicking the button start the timeline/animation:
-$( ".button" ).click(function() {
-	if ($(this).hasClass('active')){
-		$(this).removeClass('active');
-	}else{
-  timeline.play();
-  $(this).addClass('active');
-	}
+
+
+$(document).foundation();
+
+$(function() {
+  $('.button-like')
+    .bind('click', function(event) {
+      $(".button-like").toggleClass("liked");
+    })
 });
 
 
-});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
