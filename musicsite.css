@@ -1,0 +1,89 @@
+body {
+	font-family: garamond;
+}
+
+img {
+	width: 300px;
+	height:300px;
+	margin: auto;
+	border: 2px solid black;
+}
+
+.gallery {
+	column-count: 3;
+	border: 2px solid black;
+}
+
+.albumzone {
+	display: inline-block;
+	height: 400px;
+	width: 305px;
+	margin: 10px;
+	border: 2px solid grey;
+}
+
+.albumcover {
+	height: 301px;
+	width: 301px;
+	margin-bottom: 3px;
+	border: .5px solid grey;
+}
+
+.button{
+	width: 150px;
+	height: 50px;
+	display: inline-block;
+  	position: relative;
+	left: 0;
+	border-radius: .5px;
+	background: #fff;
+	cursor: pointer;
+	transition: background 0.5s ease;
+	border: 1px solid black;
+}
+.button:hover{
+}
+
+.buttonx{
+	width: 150px;
+	height: 50px;
+	display: inline-block;
+  	position: relative;
+	margin-left: 50%;
+	border-radius: .5px;
+	background: #fff;
+	cursor: pointer;
+	transition: background 0.5s ease;
+	font-family: garamond;
+	font-size: 25px;
+	text-align: center;
+	padding: 1px;
+	border: 1px solid black;
+}
+.active#heart:before,.active#heart:after{
+	background: red !important;
+}
+#heart {
+    width: 150px;
+    height: 50px;
+    transition: background 0.5s ease;
+}
+#heart:before,
+#heart:after {
+	transition: background 0.5s ease;
+    position: absolute;
+    content: "";
+    left: 50px;
+   	top: 0;
+    width: 50px;
+    height: 80px;
+    background: dimgrey;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+#heart:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin :100% 100%;
+}
