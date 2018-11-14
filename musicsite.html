@@ -5,119 +5,224 @@
 	<title>Rarities Gallery</title>
 	<link rel="stylesheet" type="text/css" href="musicsite.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="musicsite.js" type="text/javascript"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8">
+
+
 
 </head>
 
 
 <body>
 
-	<div class="Header"> Here is a glimpse into rare albums that have sold on the music marketplace Discogs for more than $1,000</div>
+	<div class="Header"> <h1>"Rare" albums that have sold on the music marketplace Discogs for more than $1,000.  Listed prices are highest prices albums have sold for.</h1>  <h2>Curated by Josh Kelly.</h2></div>
 
 
 	<div class="gallery">
 
 <!-- Album 1 -->	
 		<div class="albumzone">
-
-			<img src="https://upload.wikimedia.org/wikipedia/en/c/cc/Just_Another_Diamond_Day_%28Front_Cover%29.png">
-
-			<div id='heart' class='button-like'><i class="fa fa-heart"></i></div>
-
-			<div id='Info' class='buttonx'>Info</div>
-				
+			<div id="outer-box" style="cursor:pointer;" onClick="albumOne.paused?albumOne.play():albumOne.pause()">
+				<a id="music-button-one">
+					<img id= 'album1' src="https://upload.wikimedia.org/wikipedia/en/c/cc/Just_Another_Diamond_Day_%28Front_Cover%29.png" >
+					<div id="inner-box"> 
+						<p class="text-one" id="text-one-title"></p>
+						<p class="text-one" id="text-one-artist"></p>
+						<p class="text-one" id="text-one-country"></p>
+						<p class="text-one" id="text-one-year"></p>
+						<p class="text-one" id="text-one-label"></p>
+						<p class="text-one" id="text-one-genre"></p>
+						<p class="text-one" id="text-one-price"></p>
+					</div>
+				</a>
+			</div>
+			<div id='heart1' class='button-like'><i class="fa fa-heart"></i></div>
 		</div>
 
 <!-- Album 2 -->
 		<div class="albumzone">
-
-			<img src="https://img.discogs.com/qSyHAyxLggL60qiFbWlHuXt6RF8=/fit-in/550x550/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1095694-1295449030.jpeg.jpg">		
-
-			<div id='heart' class='button-like'><i class="fa fa-heart"></i></div>
-
-			<div id='Info' class='buttonx'>Info</div>
-
+			<div id="outer-box" style="cursor:pointer;" onClick="albumTwo.paused?albumTwo.play():albumTwo.pause()">
+				<a id="music-button-two">
+					<img id= 'album2' src="https://img.discogs.com/qSyHAyxLggL60qiFbWlHuXt6RF8=/fit-in/550x550/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1095694-1295449030.jpeg.jpg">
+				</a>
+				<div id="inner-box">
+						<p class="text-two" id="text-two-title"></p>
+						<p class="text-two" id="text-two-artist"></p>
+						<p class="text-two" id="text-two-country"></p>
+						<p class="text-two" id="text-two-year"></p>
+						<p class="text-two" id="text-two-label"></p>
+						<p class="text-two" id="text-two-genre"></p>
+						<p class="text-two" id="text-two-price"></p>
+				</div>
+			</div>
+			<div id='heart2' class='button-like'><i class="fa fa-heart"></i></div>
 		</div>
 
 <!-- Album 3 -->
 		<div class="albumzone">
-
-			<img src="https://img.discogs.com/46qN6JrJJxs9E3tqF2to6CbY4wI=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-6277496-1415416064-5085.jpeg.jpg">
-
-			<div id='heart' class='button-like'><i class="fa fa-heart"></i></div>
-
-			<div id='Info' class='buttonx'>Info</div>
-				
+			<div id="outer-box" style="cursor:pointer;" onClick="albumThree.paused?albumThree.play():albumThree.pause()">
+				<a id="music-button-three">
+					<img id='album3' src="https://img.discogs.com/46qN6JrJJxs9E3tqF2to6CbY4wI=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-6277496-1415416064-5085.jpeg.jpg">
+				</a>
+				<div id="inner-box"> 
+					<p class="text-three" id="text-three-title"></p>
+					<p class="text-three" id="text-three-artist"></p>
+					<p class="text-three" id="text-three-country"></p>
+					<p class="text-three" id="text-three-year"></p>
+					<p class="text-three" id="text-three-label"></p>
+					<p class="text-three" id="text-three-genre"></p>
+					<p class="text-three" id="text-three-price"></p>
+				</div>
+			</div>
+			<div id='heart3' class='button-like'><i class="fa fa-heart"></i></div>	
 		</div>
 		
 <!-- Album 4 -->
 		<div class="albumzone">
-
-			<img src="https://img.discogs.com/hjQ7eVbU4f3uATx8TkW9GWsAwow=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-2933431-1307975414.jpeg.jpg">
-			
-			<div id='heart' class='button-like'><i class="fa fa-heart"></i></div>
-
-			<div id='Info' class='buttonx'>Info</div>
-				
+			<div id="outer-box" style="cursor:pointer;" onClick="albumFour.paused?albumFour.play():albumFour.pause()">
+				<a id="music-button-four">
+					<img id='album4' src="https://img.discogs.com/hjQ7eVbU4f3uATx8TkW9GWsAwow=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-2933431-1307975414.jpeg.jpg">
+				</a>
+				<div id="inner-box">
+					<p class="text-four" id="text-four-title"></p>
+					<p class="text-four" id="text-four-artist"></p>
+					<p class="text-four" id="text-four-country"></p>
+					<p class="text-four" id="text-four-year"></p>
+					<p class="text-four" id="text-four-label"></p>
+					<p class="text-four" id="text-four-genre"></p>
+					<p class="text-four" id="text-four-price"></p>
+				</div>
+			</div>
+			<div id='heart4' class='button-like'><i class="fa fa-heart"></i></div>	
 		</div>
 
 <!-- Album 5 -->
 		<div class="albumzone">
-
-			<img src="https://img.discogs.com/ILKEWCkr9Wepdy6mdjbNr7O17tY=/fit-in/500x502/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-4302535-1396794779-5954.jpeg.jpg">
-
-			<div id='heart' class='button-like'><i class="fa fa-heart"></i></div>
-
-			<div id='Info' class='buttonx'>Info</div>
-				
+			<div id="outer-box" style="cursor:pointer;" onClick="albumFive.paused?albumFive.play():albumFive.pause()">
+				<a id="music-button-five">
+					<img id='album5' src="https://img.discogs.com/ILKEWCkr9Wepdy6mdjbNr7O17tY=/fit-in/500x502/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-4302535-1396794779-5954.jpeg.jpg">
+				</a>
+				<div id="inner-box">
+					<p class="text-five" id="text-five-title"></p>
+					<p class="text-five" id="text-five-artist"></p>
+					<p class="text-five" id="text-five-country"></p>
+					<p class="text-five" id="text-five-year"></p>
+					<p class="text-five" id="text-five-label"></p>
+					<p class="text-five" id="text-five-genre"></p>
+					<p class="text-five" id="text-five-price"></p>
+				</div>
+			</div>
+			<div id='heart5' class='button-like'><i class="fa fa-heart"></i></div>	
 		</div>
 
 <!-- Album 6 -->
 		<div class="albumzone">
-
-			<img src="https://images-na.ssl-images-amazon.com/images/I/61AxQ5FI7lL.jpg">
-
-			<div id='heart' class='button-like'><i class="fa fa-heart"></i></div>
-
-			<div id='Info' class='buttonx'>Info</div>
-				
+			<div id="outer-box"  style="cursor:pointer;" onClick="albumSix.paused?albumSix.play():albumSix.pause()">
+				<a id="music-button-six">
+					<img id='album6' src="https://images-na.ssl-images-amazon.com/images/I/61AxQ5FI7lL.jpg">
+				</a>
+				<div id="inner-box">
+					<p class="text-six" id="text-six-title"></p>
+					<p class="text-six" id="text-six-artist"></p>
+					<p class="text-six" id="text-six-country"></p>
+					<p class="text-six" id="text-six-year"></p>
+					<p class="text-six" id="text-six-label"></p>
+					<p class="text-six" id="text-six-genre"></p>
+					<p class="text-six" id="text-six-price"></p>
+				</div>
+			</div>
+			<div id='heart6' class='button-like'><i class="fa fa-heart"></i></div>
 		</div>
 
 <!-- Album 7 -->
 		<div class="albumzone">
-
-			<img src="https://img.discogs.com/YureQztFYB7nqegVJANkcwIlPaQ=/fit-in/400x400/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-4439046-1364904838-2713.jpeg.jpg">
-
-			<div id='heart' class='button-like'><i class="fa fa-heart"></i></div>
-
-			<div id='Info' class='buttonx'>Info</div>
-				
+			<div id="outer-box" style="cursor:pointer;" onClick="albumSeven.paused?albumSeven.play():albumSeven.pause()">
+				<a id="music-button-seven">
+					<img id='album7' src="https://img.discogs.com/YureQztFYB7nqegVJANkcwIlPaQ=/fit-in/400x400/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-4439046-1364904838-2713.jpeg.jpg">
+				</a>
+				<div id="inner-box">
+					<p class="text-seven" id="text-seven-title"></p>
+					<p class="text-seven" id="text-seven-artist"></p>
+					<p class="text-seven" id="text-seven-country"></p>
+					<p class="text-seven" id="text-seven-year"></p>
+					<p class="text-seven" id="text-seven-label"></p>
+					<p class="text-seven" id="text-seven-genre"></p>
+					<p class="text-seven" id="text-seven-price"></p>
+				</div>
+			</div>
+			<div id='heart7' class='button-like'><i class="fa fa-heart"></i></div>
 		</div>
 
 <!-- Album 8 -->
 		<div class="albumzone">
-
-			<img src="https://img.discogs.com/RgMwMaKXozyMO7E-bGvd2GKt4P4=/fit-in/599x591/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-762773-1156256189.jpeg.jpg">
-
-			<div id='heart' class='button-like'><i class="fa fa-heart"></i></div>
-
-			<div id='Info' class='buttonx'>Info</div>
-		
+			<div id="outer-box" style="cursor:pointer;" onClick="albumEight.paused?albumEight.play():albumEight.pause()">
+				<a id="music-button-eight">
+					<img id='album8' src="https://img.discogs.com/RgMwMaKXozyMO7E-bGvd2GKt4P4=/fit-in/599x591/filters:strip_icc():format(	jpeg):mode_rgb():quality(90)/discogs-images/R-762773-1156256189.jpeg.jpg">
+				</a>
+				<div id="inner-box">
+					<p class="text-eight" id="text-eight-title"></p>
+					<p class="text-eight" id="text-eight-artist"></p>
+					<p class="text-eight" id="text-eight-country"></p>
+					<p class="text-eight" id="text-eight-year"></p>
+					<p class="text-eight" id="text-eight-label"></p>
+					<p class="text-eight" id="text-eight-genre"></p>
+					<p class="text-eight" id="text-eight-price"></p>
+				</div>
+			</div>
+			<div id='heart8' class='button-like'><i class="fa fa-heart"></i></div>
 		</div>
 
 <!-- Album 9 -->
 		<div class="albumzone">
-
-			<img src="https://img.discogs.com/hGDwh8ykGN5o0a4Kx39a3Xj1A28=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-10935863-1506798435-8761.jpeg.jpg">
-
-			<div id='heart' class='button-like'><i class="fa fa-heart"></i></div>
-
-			<div id='Info' class='buttonx'>Info</div>
-			
+			<div id="outer-box" style="cursor:pointer;" onClick="albumNine.paused?albumNine.play():albumNine.pause()">
+				<a id="music-button-nine">
+					<img id='album9' src="https://img.discogs.com/hGDwh8ykGN5o0a4Kx39a3Xj1A28=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-10935863-1506798435-8761.jpeg.jpg">
+				</a>
+				<div id="inner-box">
+					<p class="text-nine" id="text-nine-title"></p>
+					<p class="text-nine" id="text-nine-artist"></p>
+					<p class="text-nine" id="text-nine-country"></p>
+					<p class="text-nine" id="text-nine-year"></p>
+					<p class="text-nine" id="text-nine-label"></p>
+					<p class="text-nine" id="text-nine-genre"></p>
+					<p class="text-nine" id="text-nine-price"></p>
+				</div>
+			</div>
+			<div id='heart9' class='button-like'><i class="fa fa-heart"></i></div>
 		</div>
 
 	</div>
 
 </body>
+
+	<audio id=albumOne>
+		<source src="one.mp3" type="audio/mpeg">
+	</audio>
+	<audio id=albumTwo>
+		<source src="two.mp3" type="audio/mpeg">
+	</audio>
+	<audio id=albumThree>
+		<source src="three.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="albumFour">
+		<source src="four.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="albumFive">
+		<source src="five.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="albumSix">
+		<source src="six.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="albumSeven">
+		<source src="seven.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="albumEight">
+		<source src="eight.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="albumNine">
+		<source src="nine.mp3" type="audio/mpeg">
+	</audio>
+
 </html>
